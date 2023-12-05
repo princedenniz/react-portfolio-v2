@@ -123,6 +123,10 @@
     height: 2.75rem;
     text-align: center;
   }
+  .link-container a:hover{
+    color: brown;
+    cursor: pointer;
+  }
   
   .link-container {
     display: flex;

@@ -7,7 +7,7 @@ const AboutSubHeading =({title, content, active, onClick, menuItem})=> {
   
     return (
       <div className={classNames(subContainerClass, {"active-subheading" : active})}>
-        <h2 onClick={onClick}>{title}</h2>
+        <h2 className='aboutTitle' onClick={onClick}>{title}</h2>
         <div className='p-container'>{content}</div>
       </div>
     )

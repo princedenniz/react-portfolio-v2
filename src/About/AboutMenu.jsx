@@ -51,6 +51,8 @@ export default class AboutMenu extends Component {
             />
           ))}
         </div>
+
+        
         <div className="sub-container">
           <div className="icon-title-container">
             <img src={activeMenuIcon} alt={activeMenuTitle} className="icon" />

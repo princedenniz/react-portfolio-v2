@@ -9,10 +9,8 @@ const projects ={
         description: (
             <>
                <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing
-                 elit. Nobis provident sapiente sit asperiores
-                 molestias, eveniet eligendi vel rem esse ex doloribus, nemo r
-                erum! Eaque illum ad, sequi ducimus fugit quas?
+                Project description
+                 
                </p>
             </>
         ),
@@ -25,10 +23,7 @@ const projects ={
         description: (
             <>
                <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing
-                 elit. Nobis provident sapiente sit asperiores
-                 molestias, eveniet eligendi vel rem esse ex doloribus, nemo r
-                erum! Eaque illum ad, sequi ducimus fugit quas?
+               Project description
                </p>
             </>
         ),
@@ -41,10 +36,7 @@ const projects ={
         description: (
             <>
                <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing
-                 elit. Nobis provident sapiente sit asperiores
-                 molestias, eveniet eligendi vel rem esse ex doloribus, nemo r
-                erum! Eaque illum ad, sequi ducimus fugit quas?
+                Project description
                </p>
             </>
         ),
