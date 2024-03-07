@@ -14,8 +14,8 @@ const projects ={
                </p>
             </>
         ),
-        github: "https://github.com",
-        demo: "http://netlify.com"
+        github: "https://github.com/princedenniz/My-Gym-site",
+        demo: "https://my-gym-site.vercel.app/"
     },
     2: {
         title: "SoMe Platform",
@@ -27,8 +27,8 @@ const projects ={
                </p>
             </>
         ),
-        github: "https://github.com",
-        demo: "http://netlify.com"
+        github: "https://github.com/princedenniz/My-Gym-site",
+        demo: "https://my-gym-site.vercel.app/"
     },
     3: {
         title: "SoMe Platform",
@@ -40,8 +40,73 @@ const projects ={
                </p>
             </>
         ),
-        github: "https://github.com",
-        demo: "http://netlify.com"
+        github: "https://github.com/princedenniz/My-Gym-site",
+        demo: "https://my-gym-site.vercel.app/"
+    },
+    4: {
+        title: "SoMe Platform",
+        image: projectThree,
+        description: (
+            <>
+               <p>
+                Project description
+               </p>
+            </>
+        ),
+        github: "https://github.com/princedenniz/My-Gym-site",
+        demo: "https://my-gym-site.vercel.app/"
+    },
+    5: {
+        title: "SoMe Platform",
+        image: projectThree,
+        description: (
+            <>
+               <p>
+                Project description
+               </p>
+            </>
+        ),
+        github: "https://github.com/princedenniz/My-Gym-site",
+        demo: "https://my-gym-site.vercel.app/"
+    },
+    6: {
+        title: "SoMe Platform",
+        image: projectThree,
+        description: (
+            <>
+               <p>
+                Project description
+               </p>
+            </>
+        ),
+        github: "https://github.com/princedenniz/My-Gym-site",
+        demo: "https://my-gym-site.vercel.app/"
+    },
+    7: {
+        title: "SoMe Platform",
+        image: projectThree,
+        description: (
+            <>
+               <p>
+                Project description
+               </p>
+            </>
+        ),
+        github: "https://github.com/princedenniz/My-Gym-site",
+        demo: "https://my-gym-site.vercel.app/"
+    },
+    8: {
+        title: "SoMe Platform",
+        image: projectThree,
+        description: (
+            <>
+               <p>
+                Project description
+               </p>
+            </>
+        ),
+        github: "https://github.com/princedenniz/My-Gym-site",
+        demo: "https://my-gym-site.vercel.app/"
     },
 }
 
