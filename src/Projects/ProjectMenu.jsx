@@ -1,25 +1,19 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import classNames from "classnames";
 import projects from "./ProjectData";
 import "../styles/projectMenu.css";
 
-export default class ProjectMenu extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      activeProject: 1,
-    };
-  }
-  handleProjectClick = (project) => {
-    this.setState({
-      activeProject: project,
-    });
+const ProjectMenu = () => {
+  const [activeProject, setActiveProject] = useState(1);
+
+  const handleProjectClick = (project) => {
+    setActiveProject(project);
   };
 
-  renderContent = (projects) => {
+  const renderContent = (projects) => {
     return projects.map((project, index) => (
       <div key={index} className={`project-sub-container-${index + 1}`}>
-        <h3 className="project" >{project.title}</h3>
+        <h3 className="project">{project.title}</h3>
         <img src={project.image} alt={project.title} className="projecimg" />
         <div className="project">{project.description}</div>
         <div className="link-container">
@@ -33,31 +27,38 @@ export default class ProjectMenu extends Component {
       </div>
     ));
   };
- 
 
-  render() {
-    const { activeProject } = this.state;
-    const projectItems = ["PROJECT ONE", "PROJECT TWO", "PROJECT THREE", "PROJECT FOUR", "PROJECT FIVE", "PROJECT SIX", "PROJECT SEVEN", "PROJECT EIGHT"];
+  const projectItems = [
+    "PROJECT ONE",
+    "PROJECT TWO",
+    "PROJECT THREE",
+    "PROJECT FOUR",
+    "PROJECT FIVE",
+    "PROJECT SIX",
+    "PROJECT SEVEN",
+    "PROJECT EIGHT",
+  ];
 
-    return (
-      <div className="project-menu">
-        <div className="project-items-container">
-          {projectItems.map((item, index) => (
-            <div
-              key={index}
-              className={classNames("project-item", {
-                activeProject: activeProject === index + 1,
-              })}
-              onClick={() => this.handleProjectClick(index + 1)}
-            >
-              <h2 className="title">{item}</h2>
-            </div>
-          ))}
-        </div>
-        <div className="project-sub-container">
-          {this.renderContent([projects[activeProject]])}
-        </div>
+  return (
+    <div className="project-menu">
+      <div className="project-items-container">
+        {projectItems.map((item, index) => (
+          <div
+            key={index}
+            className={classNames("project-item", {
+              activeProject: activeProject === index + 1,
+            })}
+            onClick={() => handleProjectClick(index + 1)}
+          >
+            <h2 className="title">{item}</h2>
+          </div>
+        ))}
       </div>
-    );
-  }
-}
+      <div className="project-sub-container">
+        {renderContent([projects[activeProject]])}
+      </div>
+    </div>
+  );
+};
+
+export default ProjectMenu;
